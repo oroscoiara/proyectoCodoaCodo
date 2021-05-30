@@ -1,0 +1,407 @@
+<head>
+    <title>Guinness - Cursos de Diseño y Programación</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+      <!-- Load Require CSS -->
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Font CSS -->
+      <link href="assets/css/boxicon.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/estilos.css">
+  
+  </head>
+  
+  <body>
+    <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-black">
+	
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+        navbar-light = texto negro de la letra
+        bg-white = fondo de color blanco
+        -->
+    
+            <div class="container d-flex justify-content-between align-items-center">
+            
+                <a class="navbar-brand h1" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+                    <i class='bx bx-brain bx-sm text-dark'></i>
+                                  <!--	bx bx-buildings = icono del logo de la web: 
+                    http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+                    https://boxicons.com/
+                    -->
+    
+               <span class="text-dark h4">Guinness</span><span class="text-italic">DotCom</span></a>
+                
+                <!--	boton de hamburguesa --> 
+                    <button class="navbar-toggler border-0" 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbar-toggler-success" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+            id="navbar-toggler-success">
+            
+            <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+            por un punto de interrupción principal.
+            flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+            d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+            directos en elementos flexibles
+            -->
+                            <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                            <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-light">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+                           (incluida la compatibilidad con menús desplegables).-->
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                            <!-- px = padding y mx es el margin 
+                            rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Nuestros Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Aranceles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    <!---------------------------------------------------------Fin de las opciones del menu
+    ------------------------------------------------------------ Inicio de los iconos del menu-->
+                    <div class="navbar align-self-center d-flex">
+                        <a class="nav-link" href="#"><i class='bx bxs-shopping-bags bx-sm text-dark'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bxs-user-circle bx-sm text-dark'></i></a>
+                        <!--	https://iconify.design/icon-sets/bx/-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <!----------------------------------------------------------- Fin de los iconos del menu-->
+    
+        <!-- Close Header -->
+  
+  
+      <!-- Start Banner Hero -->
+      <section class="w-100 barra">
+          <div class="container">
+              <div class="row d-flex align-items-center py-1">
+                  <div class="col-lg-6 text-start">
+                      <h1 class="h2 py-5 text-white typo-space-line">Sobre nosotros</h1>
+                      <p class="light-300 text-white">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi enim harum delectus ab minus nostrum. Voluptas, fuga! Quidem explicabo possimus velit quia corrupti illo fugiat, laudantium inventore non omnis magni?
+                      </p>
+                  </div>
+                  <div class="col-lg-6">
+                      <img class="imgUnited" src="assets/img/team.png"
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- End Banner Hero -->
+  
+  
+      <!-- Start Team Member -->
+      <section class="container py-5">
+          <div class="pt-5 pb-3 d-lg-flex align-items-center gx-5">
+  
+              <div class="col-lg-3">
+                  <h2 class="h2 py-5 typo-space-line">Equipo de Guinness<em>DotCom</em></h2>
+                  <p class="text-muted light-300">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+              </div>
+  
+              <div class="col-lg-9 row">
+                  <div class="team-member col-md-4">
+                      <img class="team-member-img img-fluid square p-4" src="./assets/img/team-02.jpg" alt="Card image">
+                      <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                          <li>Juliana Alvarez Reco</li>
+                          <li>Co-Founder & CTO</li>
+                      </ul>
+                  </div>
+                  <div class="team-member col-md-4">
+                      <img class="team-member-img img-fluid square p-4" src="./assets/img/team-01.jpg" alt="Card image">
+                      <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                          <li>Juana Farren</li>
+                          <li>Head of HR</li>
+                      </ul>
+                  </div>
+                  <div class="team-member col-md-4">
+                      <img class="team-member-img img-fluid square p-4" src="./assets/img/team-03.jpg" alt="Card image">
+                      <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                          <li>Roberto Peña Sosa</li>
+                          <li>Project Leader</li>
+                      </ul>
+                  </div>
+                  <div class="team-member col-md-2">
+                    <img class="team-member-img img-fluid square p-4" src="./assets/img/man-400.jpg" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Juan Tolero</li>
+                        <li>Dirección</li>
+                    </ul>
+                </div>
+                <div class="team-member col-md-2">
+                    <img class="team-member-img img-fluid square p-4" src="./assets/img/woman2-400.jpg" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Wanda Cabrera</li>
+                        <li>Marketing</li>
+                    </ul>
+                </div>
+                <div class="team-member col-md-2">
+                    <img class="team-member-img img-fluid square p-4" src="./assets/img/man1-400.jpg" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Martín Sora</li>
+                        <li>Project Owner</li>
+                    </ul>
+                </div>
+                <div class="team-member col-md-2">
+                    <img class="team-member-img img-fluid square p-4" src="./assets/img/woman1-400.jpg" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Liliana Recud</li>
+                        <li>Eventos</li>
+                    </ul>
+                </div>
+                <div class="team-member col-md-2">
+                    <img class="team-member-img img-fluid square p-4" src="./assets/img/woman3-400.jpg" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Rocio Pereyra</li>
+                        <li>Comunicación</li>
+                    </ul>
+                </div>
+                <div class="team-member col-md-2">
+                    <img class="team-member-img img-fluid square p-4" src="./assets/img/woman4-400.jpg" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Dolores Musi</li>
+                        <li>Legales</li>
+                    </ul>
+                </div>
+              </div>
+  
+          </div>
+      </section>
+      <!-- End Team Member -->
+  
+      <!-- Start Our Partner -->
+      <section class="barra1 py-3">
+          <div class="container py-1">
+              <h2 class="h3 text-dark text-center py-3">Empresas que nos eligen:</h2>
+              <div class="row text-center ">
+                  <div class="col-md-6 mb-6 ">
+                      <div class="card partner-wap py-3 ">
+                          <a href="#"><i class='display-6 text-dark bx bxs-bug'>Pirulin</i></a>
+                      </div>
+                  </div>
+                  <div class="col-md-6 mb-6">
+                      <div class="card partner-wap py-3 ">
+                          <a href="#"><i class='display-6 text-dark bx bxs-shield'>Box&Check</i></a>
+                      </div>
+                  </div>
+                  <div class="col-md-6 mb-6">
+                      <div class="card partner-wap py-3 ">
+                          <a href="#"><i class='display-6 text-dark bx bx-infinite'>T.Airlines</i></a>
+                      </div>
+                  </div>
+                  <div class="col-md-6 mb-6">
+                      <div class="card partner-wap py-3 ">
+                          <a href="#"><i class='display-6 text-dark bx bxs-anchor'>Remake.IT</i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!--End Our Partner-->
+  
+        <!-- Start Aim -->
+    <section class="banner-bg bg-white py-5">
+        <div class="container my-4">
+            <div class="row text-center">
+
+                <div class="objective col-lg-4 mt-sm-0 mt-4">
+                    <div class="m-auto py-4 mb-2 mb-sm-4">
+                        <i class="display-4 bx bxs-bulb text-dark"></i>
+                    </div>
+                    <h2 class="objective-heading h3 mb-2 mb-sm-4 light-300">Nuestra Vision</h2>
+                    <p class="light-300">
+                        Incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse commodo viverra.
+                    </p>
+                </div>
+
+                <div class="objective col-lg-4 mt-sm-0 mt-4">
+                    <div class="m-auto py-4 mb-2 mb-sm-4">
+                        <i class='display-4 bx bx-revision text-dark'></i>
+                    </div>
+                    <h2 class="objective-heading h3 mb-2 mb-sm-4 light-300">Nuestra Misión</h2>
+                    <p class="light-300">
+                        Eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam quis.
+                    </p>
+                </div>
+
+                <div class="objective col-lg-4 mt-sm-0 mt-4">
+                    <div class="m-auto py-4 mb-2 mb-sm-4">
+                        <i class="display-4 bx bxs-select-multiple text-dark"></i>
+                    </div>
+                    <h2 class="objective-heading h3 mb-2 mb-sm-4 light-300">Nuestra Pasión</h2>
+                    <p class="light-300">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Aim -->
+
+  
+      <!-- Start Contact
+      <section class="banner-bg bg-light py-5">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 mx-auto my-4 p-3">
+                      <form action="#" method="get"><h4 class="h5 text-center">Suscribite a nuestro newsletter y enterate de todas las novedades que tenemos para vos</h1>
+                      <div class="input-group py-3">
+                      
+                          <input name="email" type="mail" class="form-control form-control-lg rounded-pill rounded-end" id="email" placeholder="Tu Email" aria-label="Tu Email" required>
+                          <button class="btn btnsuscribe text-white btn-lg rounded-pill rounded-start px-lg-4" type="submit">Suscribirte</button>
+                      </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </section>
+      End Contact -->
+  
+         <!-- Start Footer -->
+    <footer class="footer pt-4 ">
+        <div class="container ">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left ">
+                    <a class="navbar-brand" href="index.html">
+                        
+                        <i class='bx bx-brain bx-sm text-light'></i>
+              	       <span class="text-light h4">Guinness</span><span class="text-italic-footer">DotCom</span></a>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Seguinos en nuestras redes:
+                    </p>
+                    <ul class="list-inline footer-icons light-200">
+                        <li class="list-inline-item m-20">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-circle bx-md'></i>
+                                
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-20">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-10">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp bx-md'></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Nuestro Espacio</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light" 
+								href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+								href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+								href="work.html">Nuestros Cursos</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i></i></i><a class="text-decoration-none text-light py-1" 
+								href="pricing.html">Aranceles</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i></i><a class="text-decoration-none text-light py-1" 
+								href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Nuestros cursos</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Diseño Gráfico</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Diseño UX/UI</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Programación</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Data Science</a>
+                        </li>
+                    </ul>
+                </div>
+
+              
+            </div>
+        </div>
+
+        <div class="w-100 lastline py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 Guinness.DotCom. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <strong>Iara Orosco - Comisión #2104</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+  
+      <!-- Bootstrap -->
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+  
+  
+  </body>
+  
+  </html>

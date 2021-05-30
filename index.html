@@ -1,0 +1,610 @@
+<!DOCTYPE html>     <!----- definición de html 5 -->          
+<html lang="es"> 	<!----- definición del lenguaje -->  
+					<!------Inicio del  HEAD -->
+<head>
+  <title>Guinness - Cursos de Diseño y Programación</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+	<!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
+    <link rel="apple-touch-icon" href="assets/img/brain-regular-24.png">
+	<!----- icono para apple y safari --> 
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/brain-regular-24.png">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- iconos  -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+	    <!-- tipo de letra -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+		<!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<!-----
+.text-primary  		azul
+.text-secondary		gris
+.text-success		verde
+.text-danger		rojo
+.text-warning		amarillo
+.text-info			celeste
+.text-light			blanco
+.text-dark			negro
+.text-muted			gris oscuro
+.text-white			gris claro
+-->
+<!------------------------------------------------------------------ Fin del  HEAD -->
+<body>
+    <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-black">
+	
+	<!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+	navbar-light = texto negro de la letra
+	bg-white = fondo de color blanco
+	-->
+
+        <div class="container d-flex justify-content-between align-items-center">
+		
+            <a class="navbar-brand h1" href="index.html">
+			<!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+                <i class='bx bx-brain bx-sm text-dark'></i>
+              				<!--	bx bx-buildings = icono del logo de la web: 
+				http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+				https://boxicons.com/
+				-->
+
+	       <span class="text-dark h4">Guinness</span><span class="text-italic">DotCom</span></a>
+			
+			<!--	boton de hamburguesa --> 
+  	          <button class="navbar-toggler border-0" 
+				type="button" data-bs-toggle="collapse" 
+				data-bs-target="#navbar-toggler-success" 
+				aria-controls="navbarSupportedContent" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+				</span>
+            </button>
+		<!------------------------------------------- Opciones del Menu		-->
+		<div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+		id="navbar-toggler-success">
+		
+		<!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+		por un punto de interrupción principal.
+		flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+		d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+		directos en elementos flexibles
+		-->
+  		              <div class="flex-fill mx-xl-5 mb-2">
+				<!--	  mx=para clases que establecen tanto *-lefty*-right-->
+ 	                   <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-light">
+					<!--   .navbar-nav para una navegación ligera y de altura completa 
+					   (incluida la compatibilidad con menús desplegables).-->
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+						<!-- px = padding y mx es el margin 
+						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Nuestros Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Aranceles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+<!---------------------------------------------------------Fin de las opciones del menu
+------------------------------------------------------------ Inicio de los iconos del menu-->
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bxs-shopping-bags bx-sm text-dark'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bxs-user-circle bx-sm text-dark'></i></a>
+				    <!--	https://iconify.design/icon-sets/bx/-->
+                </div>
+            </div>
+        </div>
+    </nav>
+<!----------------------------------------------------------- Fin de los iconos del menu-->
+
+    <!-- Close Header -->
+ <!----------------------------------------------------------- Fin del Header-->
+
+    <!-- Start Banner Hero -->
+    <div class="banner-wrapper bg-light">
+        <div id="index_banner" class="banner-vertical-center-index container-fluid pt-5">
+
+            <!-- Start slider -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" ></li>
+                </ol>
+ <!-- class="active" Se requiere un elemento activo inicial
+La .activeclase debe agregarse a una de las diapositivas. De lo contrario, el carrusel no será visible. -->
+				
+                <div class="carousel-inner">
+				
+<!-- Primer elemento del carrousel 
+Ver: https://getbootstrap.com/docs/4.0/components/carousel/  -->				
+
+                    <div class="carousel-item active">
+
+                 <div class="py-5 row d-flex align-items-center">
+                  <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                    <h1 class="banner-heading h1 text-white  display-3 mb-0 pb-5 mx-0 px-0 light-200 typo-space-line ">
+					<!--typo-space-line = clase configurada en el css 
+					display-3 = <H3> 
+					Where property is one of:
+
+						m - for classes that set margin
+						p - for classes that set padding
+						Where sides is one of:
+
+						t - for classes that set margin-top or padding-top
+						b - for classes that set margin-bottom or padding-bottom
+						l - for classes that set margin-left or padding-left
+						r - for classes that set margin-right or padding-right
+						x - for classes that set both *-left and *-right
+						y - for classes that set both *-top and *-bottom
+						blank - for classes that set a margin or padding on all 4 sides of the element
+						ejemplo: 
+						<div class="mx-auto" style="width: 200px;">
+						  Centered element
+						</div>
+					
+					-->
+                                    Aprendé <strong>programando</strong>!</h1>
+                                <p class="banner-body text-white py-3 mx-0 px-0">
+                                    Encontrá cursos y carreras diseñadas a tu medida </p>
+                                <a class="banner-button btn rounded-pill btn-outline-light btn-lg px-4" 
+								href="#" role="button">Ver más</a>
+                            </div>
+                        </div>
+
+                    </div>
+ <!----------------------------------------------------------- Nuevo ITem del Carrousel-->
+
+                    <div class="carousel-item">
+
+                        <div class="py-5 row d-flex align-items-center">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                                <h1 class="banner-heading h1 text-white display-3 mb-0 pb-3 mx-0 px-0 light-300">
+                                    Aprendé de la mano de los mejores.
+                                </h1>
+                                <p class="banner-body text-white py-3">
+                                    Accede a gran variedad de cursos de primera calidad.
+                                </p>
+                         
+					 <!--role="button" indica que un boton no apunta a una url sino que hace otra cosa-->	
+                            </div>
+                        </div>
+
+                    </div>
+ <!----------------------------------------------------------- Nuevo ITem del Carrousel-->					
+                    <div class="carousel-item">
+
+                        <div class="py-5 row d-flex align-items-center">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                                <h1 class="banner-heading h1 text-white display-3 mb-0 pb-3 mx-0 px-0 light-300">
+                                    Te brindamos acompañamiento durante toda la cursada. 
+                                </h1>
+                                <p class="banner-body text-white py-3">
+                                    Más de 2000 graduados y testimonios avalan la calidad de nuestra enseñanza.
+                                </p>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    <!-------------------------------------------------------Flechas del carrousel   -->
+                <a class="carousel-control-prev text-decoration-none" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <i class='bx bx-chevron-left'></i>
+                    <span class="visually-hidden">Ant.</span>
+                </a>
+                <a class="carousel-control-next text-decoration-none" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <i class='bx bx-chevron-right'></i>
+                    <span class="visually-hidden">Prox.</span>
+                </a>
+            </div>
+			 <!-- bx-chevron-right y left son las puntas de flecha del carrousel -->
+            <!-- End slider -->
+
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+	
+    <!-- Start Service -->
+    <section class="service-wrapper py-3">
+        <div class="container-fluid pb-3">
+            <div class="row">
+                <h2 class="h2 text-center col-12 py-5 semi-bold-600">Cursos</h2>
+                <div class="service-header col-2 col-lg-3 text-end light-300">
+                    <i class='bx bx-tag-alt'></i>
+                </div>
+                <div class="service-heading col-10 col-lg-9 text-start float-end light-300">
+                    <h2 class="h3 pb-4 typo-space-line">Precios accesibles, cuotas, becas y más!</h2>
+                </div>
+            </div>
+            <p class="service-footer col-10 offset-2 col-lg-9 offset-lg-3 text-start pb-3 text-gray-dark px-3">
+               Conocé nuestras promociones bancarias.
+            </p>
+        </div>
+
+        <div class="service-tag py-5 ">
+            <div class="col-md-12">
+                <ul class="nav d-flex justify-content-center " >
+                    <li class="nav-item mx-lg-4 ">
+                        <a class="filter-btn nav-link nav-link-2 btn-outline-primary rounded-pill text-light px-4 light-300" 
+                        href="#" data-filter=".project">Todos</a>
+				<!-- btn-outline = boton transparente -->
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link filter-btn nav-link-2 btn-outline-primary rounded-pill text-light px-4 light-300btn-outline-primary rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".diseñografico">Diseño Gráfico</a>
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link filter-btn nav-link-2 btn-outline-primary rounded-pill text-light px-4 light-300 btn-outline-primary rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".diseñouxui">Diseño UX/UI</a>
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link  filter-btn nav-link-2 btn-outline-primary rounded-pill text-light px-4 light-300btn-outline-primary rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".programacion">Programación</a>
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link filter-btn nav-link-2 btn-outline-primary rounded-pill text-light px-4 light-300btn-outline-primary rounded-pill text-light px-4 light-300" 
+						href="#" data-filter=".datascience">Data Science</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container overflow-hidden py-5">
+        <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 projects">
+
+            <!-- Comienzan los trabajos recientes -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project diseñografico">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="service card-img" src="./assets/img/grap-800.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Diseño Gráfico</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project diseñouxui">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/ux-800.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Diseño UI/UX</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project programacion">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/code-800.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Programación</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project datascience">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/binary-800.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Data Science</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project progrmacion">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/programming-800.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Node.js</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+                        <!-- Start Recent Work -->
+                        <div class="col-xl-3 col-md-4 col-sm-6 project ui datascience">
+                            <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                                <img class="card-img" src="./assets/img/py-800.jpg" alt="Card image">
+                                <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                                    <div class="service-work-content text-left text-light">
+                                        <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Python para Data Science</span>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project diseñouxui">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/uxui-800.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Diseño UX/UI</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project branding programacion">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/front-800.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Front-End</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+
+
+        </div>
+    </section>
+    <!-- End Service -->
+
+
+    
+
+
+
+    <!-- Start View Work -->
+    <section class="barra">
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center text-center ">
+                <div class="col-lg-2 col-12 text-light align-items-center">
+                    <i class='display-1 bx bx-caret-right-circle bx-lg'></i>
+                </div>
+                <div class="col-lg-7 col-12 text-light pt-2">
+                    <h3 class="h4 light-300">Empezá hoy el camino hacia un nuevo futuro.
+                    </h3>
+                    <p class="light-300">Quis ipsum suspendisse ultrices gravida.</p>
+                </div>
+ 
+            </div>
+        </div>
+    </section>
+    <!-- End View Work -->
+
+    <!-- Start Recent Work -->
+    <section class="py-1 mb-1">
+        <div class="container">
+            <div class="recent-work-header row text-center pb-1">
+                <h2 class="col-md-6 m-auto h2 semi-bold-600 py-5">Comencemos</h2>
+            </div>
+            <div class="row gy-5 g-lg-5 mb-4">
+            <div class="container-fluid pb-1">
+                <div class="row text-start col-12 py-1 semi-bold-600">
+
+                    <div class="row gy-5 g-lg-5 mb-1"></div>
+
+                    <!-- Start Recent Work -->
+                    <div class="col-md-4 mb-3">
+                        <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                            <img class="recent-work-img card-img" src="./assets/img/student-849824_1280.jpg" alt="Card image">
+                            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                                <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                    <h3 class="card-title light-100">Te ayudamos a armar tu portfolio profesional</h3>
+                                    <p class="card-text">Psum officia anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><!-- End Recent Work -->
+                
+                    <!-- Start Recent Work -->
+                    <div class="col-md-4 mb-3">
+                        <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                            <img class="recent-work-img card-img" src="./assets/img/startup-3267505_1280.jpg" alt="Card image">
+                            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                                <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                    <h3 class="card-title light-100">Amplia tu red de contactos profesionales</h3>
+                                    <p class="card-text">Psum officia anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><!-- End Recent Work -->
+                
+                    <!-- Start Recent Work -->
+                    <div class="col-md-4 mb-3">
+                        <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                            <img class="recent-work-img card-img" src="./assets/img/student-849825_1280.jpg" alt="Card image">
+                            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                                <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                    <h3 class="card-title light-100">Accedé a nuestra bolsa de trabajo</h3>
+                                    <p class="card-text">Sum dolor sit consencutur</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><!-- End Recent Work -->
+                
+                
+                </div>
+                </div>
+                </section>
+                <!-- End Recent Work -->
+
+
+
+
+   
+    <!-- Start Footer -->
+    <footer class="footer pt-4 ">
+        <div class="container ">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left ">
+                    <a class="navbar-brand" href="index.html">
+                        
+                        <i class='bx bx-brain bx-sm text-light'></i>
+              	       <span class="text-light h4">Guinness</span><span class="text-italic-footer">DotCom</span></a>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Seguinos en nuestras redes:
+                    </p>
+                    <ul class="list-inline footer-icons light-200">
+                        <li class="list-inline-item m-20">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-circle bx-md'></i>
+                                
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-20">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-10">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp bx-md'></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Nuestro Espacio</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light" 
+								href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+								href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+								href="work.html">Nuestros Cursos</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i></i></i><a class="text-decoration-none text-light py-1" 
+								href="pricing.html">Aranceles</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i></i><a class="text-decoration-none text-light py-1" 
+								href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Nuestros cursos</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Diseño Gráfico</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Diseño UX/UI</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Programación</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Data Science</a>
+                        </li>
+                    </ul>
+                </div>
+
+              
+            </div>
+        </div>
+
+        <div class="w-100 lastline py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 Guinness.DotCom. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <strong>Iara Orosco - Comisión #2104</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+   <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>	
+ 
+   
+</body>
+
+</html>

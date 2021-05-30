@@ -1,0 +1,355 @@
+/*
+---------------------------------------------
+Índice
+------------------------------------------------
+1. Typography
+2. Main Nav
+3. Home
+4. About
+5. Work
+6. Single Work
+7. Pricing
+8. Contact
+--------------------------------------------- */
+
+html {font-family: 'Roboto', sans-serif;}
+/* Typography */
+p, a {font-weight: 400;}
+.h2 {font-size: 40px;}
+.h3 {font-size: 28px;}
+.light-300 {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300;
+}
+.regular-400 {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 400;
+}
+.semi-bold-600 {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 600;
+}
+.typo-space-line::after,
+.typo-space-line-center::after {
+  content: "";
+  width: 150px;
+  display:block;
+  position: absolute;
+  border-bottom:  5px solid #b7b9f5;
+  padding-top: .5em;
+}
+.typo-space-line-center::after {
+  left: 50%;
+  margin-left: -75px;
+}
+
+
+/* Main Nav */
+#main_nav .nav-item .nav-link:hover {color: #fff;}
+/* Home */
+#index_banner {
+  background-image: url('./../img/technology-785742_1920.jpg');
+  opacity: 85%;
+  background-position: center center; background-size: cover;
+  height: 100%;
+  min-height: 60vh;
+  width: 100%;
+}
+#index_banner .carousel-item {
+  min-height: 60vh;
+}
+#index_banner .carousel-control-prev i,
+#index_banner .carousel-control-next i {
+  color: #e3e7e7 !important;
+  text-decoration: none;
+  font-size: 4em;
+}
+#index_banner .carousel-inner {
+  height: 80vh;
+}
+#index_banner .carousel-indicators li,
+#index_banner .carousel-indicators.active {
+  background-color: #515353 !important;
+}
+.service-wrapper .service-footer {
+  max-width: 720px;
+}
+.service-work.card {
+  border-radius: 10px !important;
+  cursor: pointer;
+}
+.service-work .service-work-vertical {
+	background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 33.33%, rgba(255,255,255,1) 66.66%, rgba(255,255,255,0) 99.99%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover * {
+  color: #000;
+  border-color: #000;
+  transition: .5s;
+}
+.recent-work.card{
+  border-radius: 10px !important;
+}
+.recent-work .recent-work-vertical {
+	background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgb(86, 83, 99) 66.666%, rgba(255,255,255,0) 99.999%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+  cursor: pointer;
+}
+.recent-work .recent-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.recent-work .recent-work-vertical:hover div.recent-work-content {
+  top: 50%;
+  margin-top: -2.5em;
+  position: absolute;
+}
+.recent-work .recent-work-vertical:hover * {
+  color: white;
+  transition: .5s;
+}
+/* About */
+#work_banner {
+  background-image: url('./../img/coding-man.jpg');
+  background-position: center center; background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.progress {
+  height: 8px;
+}
+.objective-icon {
+  border-radius: 13px;
+  width: 8rem;
+}
+.partner-wap {
+  background-color: #eeeeee;
+  transition: 1s;
+  cursor: pointer;
+}
+.partner-wap:hover {
+  background-color: #ada5a5;
+}
+.why-us {
+  background: rgb(239,239,253);
+  background: -moz-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: -webkit-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efeffd",endColorstr="#ffffff",GradientType=1);
+}
+.team-member-img {
+  transition-duration: 0.15s;
+}
+.team-member:hover .team-member-img {
+  padding: 10px !important;
+}
+
+/* Work */
+/* Singel Work */
+#work_single_banner {
+  background-image: url('./../img/digital-world-map-hologram-blue-background.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.related-content {
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* Pricing */
+.pricing-list {
+  margin-bottom: 1px;
+}
+.pricing-table {
+  max-width: 350px;
+  margin: auto;
+}
+.pricing-table,
+.pricing-horizontal {
+  border-radius: 15px !important;
+}
+/* Contact */
+#floatingtextarea {
+  height: 150px
+}
+/* Footer */
+footer a.text-light:hover {
+  color: #383e56 !important;
+  transition-duration: 0.15s;
+}
+
+.service-tag{
+  background-color: #383e56;
+}
+
+.btn-outline-primary {
+  color: #383e56;
+  border-color: #383e40;
+}
+
+
+.btn-outline-primary:hover {
+  color: #f6f9fe;
+  background-color: #383e56;
+  border-color: #383e40;
+}
+
+.btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(239, 239, 240, 0.089);
+          box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5);
+}
+
+
+/* line 91, src/assets/scss/mixins/_buttons.scss */
+.btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem #383e56;
+          box-shadow: 0 0 0 0.25rem #383e40;
+}
+
+/* line 96, src/assets/scss/mixins/_buttons.scss */
+.btn-check:checked + .btn-outline-primary,
+.btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
+  color: #f6f9fe;
+  background-color: #383e56;;
+  border-color: #383e40;;
+}
+
+/* line 105, src/assets/scss/mixins/_buttons.scss */
+.btn-check:checked + .btn-outline-primary:focus,
+.btn-check:active + .btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn-outline-primary.active:focus, .btn-outline-primary.dropdown-toggle.show:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem #383e56;
+          box-shadow: 0 0 0 0.25rem #383e40;
+}
+
+/* line 115, src/assets/scss/mixins/_buttons.scss */
+.btn-outline-primary:disabled, .btn-outline-primary.disabled {
+  color: #383e56;
+  background-color: transparent;
+}
+
+/* line 65, src/assets/scss/_buttons.scss */
+.btn-outline-secondary {
+  color: #383e40;
+  border-color: #383e40;
+}
+
+/* line 85, src/assets/scss/mixins/_buttons.scss */
+.btn-outline-secondary:hover {
+  color: #000;
+  background-color: #383e56;
+  border-color: #383e56;
+}
+
+/* line 91, src/assets/scss/mixins/_buttons.scss */
+.btn-check:focus + .btn-outline-secondary, .btn-outline-secondary:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem #383e56;
+          box-shadow: 0 0 0 0.25rem #383e40;
+}
+
+/* line 96, src/assets/scss/mixins/_buttons.scss */
+.btn-check:checked + .btn-outline-secondary,
+.btn-check:active + .btn-outline-secondary, .btn-outline-secondary:active, .btn-outline-secondary.active, .btn-outline-secondary.dropdown-toggle.show {
+  color: rgb(255, 255, 255);
+  background-color: #383e56;
+  border-color: #383e56;
+}
+
+/* line 105, src/assets/scss/mixins/_buttons.scss */
+.btn-check:checked + .btn-outline-secondary:focus,
+.btn-check:active + .btn-outline-secondary:focus, .btn-outline-secondary:active:focus, .btn-outline-secondary.active:focus, .btn-outline-secondary.dropdown-toggle.show:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem #383e56;
+          box-shadow: 0 0 0 0.25rem #383e40;
+}
+
+/* line 115, src/assets/scss/mixins/_buttons.scss */
+.btn-outline-secondary:disabled, .btn-outline-secondary.disabled {
+  color: #383e56;
+  background-color: transparent;
+}
+
+.text-italic{
+  font-style: italic;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:#383e56;
+}
+
+
+.barra{
+  background-color: #383e56;
+}
+
+.footer{
+  background-color: #383e56;
+}
+
+.text-italic-footer{
+  color: white;
+  font-style: italic;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.lastline{
+  background-color: #2b3153;
+}
+.nav-link-2:hover  {
+
+  background-color: rgb(24, 23, 23);
+  border-color: #fff;
+  border-style: groove;
+}
+
+
+.empresascard{
+  font-size: 10px;
+}
+
+
+.btnsuscribe, .btnsend, .bg-planbasico{  
+  background-color: #2b3153;
+}
+
+.imgUnited{
+  height: auto;
+  width: 80%;
+  margin-left: 25%;
+}
+
+.valores{
+  background-color: trasparent;
+}
+.barra1{
+  background-color: #979dbd;
+}
+
+.partners{
+  color: gray;
+}
+
+.work1{
+  color: #2b3153
+}
+
+.btn-blue{
+  background-color: #6d77ac;
+}
+
+.planes{
+  color: #6d77ac;
+}
+
+.contact{
+  width: 55%;
+  height: auto;
+  margin-left: 20%;
+}

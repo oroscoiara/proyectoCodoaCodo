@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Guinness - Cursos de Diseño y Programación</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+		<!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+</head>
+
+<body>
+        <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-black">
+	
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+        navbar-light = texto negro de la letra
+        bg-white = fondo de color blanco
+        -->
+    
+            <div class="container d-flex justify-content-between align-items-center">
+            
+                <a class="navbar-brand h1" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+                    <i class='bx bx-brain bx-sm text-dark'></i>
+                                  <!--	bx bx-buildings = icono del logo de la web: 
+                    http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+                    https://boxicons.com/
+                    -->
+    
+               <span class="text-dark h4">Guinness</span><span class="text-italic">DotCom</span></a>
+                
+                <!--	boton de hamburguesa --> 
+                    <button class="navbar-toggler border-0" 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbar-toggler-success" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+            id="navbar-toggler-success">
+            
+            <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+            por un punto de interrupción principal.
+            flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+            d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+            directos en elementos flexibles
+            -->
+                            <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                            <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-light">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+                           (incluida la compatibilidad con menús desplegables).-->
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                            <!-- px = padding y mx es el margin 
+                            rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Nuestros Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Aranceles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    <!---------------------------------------------------------Fin de las opciones del menu
+    ------------------------------------------------------------ Inicio de los iconos del menu-->
+                    <div class="navbar align-self-center d-flex">
+                        <a class="nav-link" href="#"><i class='bx bxs-shopping-bags bx-sm text-dark'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bxs-user-circle bx-sm text-dark'></i></a>
+                        <!--	https://iconify.design/icon-sets/bx/-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <!----------------------------------------------------------- Fin de los iconos del menu-->
+    
+        <!-- Close Header -->
+
+    <!-- Start Banner Hero -->
+    <section class="w-100 barra">
+        <div class="container py-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="contact-header col-lg-4">
+                    <h1 class="h2 pb-3 text-white">Contáctanos</h1>
+                    <p class="light-300 text-white">
+                        Vector illustration is from <a rel="nofollow" href="https://storyset.com/" target="_blank">StorySet</a>.
+                        Incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                    </p>
+                </div>
+                <div class="contact-img col-lg-5 align-items-end col-md-4">
+                    <img class="imgUnited contact" src="assets/img/calling.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Hero -->
+
+
+    <!-- Start Contact -->
+    <section class="container py-5">
+
+        <h1 class="col-12 col-xl-8 h2 text-left work1 pt-3">Aprendé Diseño y Programación de la mano de los mejores!</h1>
+        <h2 class="col-12 col-xl-8 h4 text-left regular-400">Elit, sed do eiusmod tempor </h2>
+
+        <div class="row pb-4">
+            <div class="col-lg-4">
+
+                <div class="contact row mb-4">
+                    <div class="contact-icon col-lg-3 col-3">
+                        <div class="py-3 mb-2 text-center  text-secondary">
+                            <i class='display-6 bx pt-4 bx-buildings'></i>
+                        </div>
+                    </div>
+                    <ul class="contact-info list-unstyled col-lg-9 col-9 pt-5 light-300">
+                        <li class="h5 mb-0">At. a Empresas</li>
+                        <li class="text-muted">15-1020-02340</li>
+                    </ul>
+                </div>
+
+                <div class="contact row mb-4">
+                    <div class="contact-icon col-lg-3 col-3">
+                        <div class=" py-3 mb-2 text-center text-secondary">
+                            <i class='bx bx-message display-6' ></i>
+                        </div>
+                    </div>
+                    <ul class="contact-info list-unstyled col-lg-9 col-9 light-300">
+                        <li class="h5 mb-0">Atención a Alumnos</li>
+                        <li class="text-muted">15-03020-40340</li>
+                    </ul>
+                </div>
+                </div>
+
+            </div>
+
+
+            <!-- Start Contact Form -->
+            <div class="col-lg-8 ">
+                <form class="contact-form row" method="post" action="#" role="form">
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingname" name="inputname" placeholder="Name">
+                            <label for="floatingname light-300">Nombre y Apellido</label>
+                        </div>
+                    </div><!-- End Input Name -->
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingemail" name="inputemail" placeholder="Email">
+                            <label for="floatingemail light-300">Email</label>
+                        </div>
+                    </div><!-- End Input Email -->
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingphone" name="inputphone" placeholder="Phone">
+                            <label for="floatingphone light-300">Teléfono</label>
+                        </div>
+                    </div><!-- End Input Phone -->
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingcompany" name="inputcompany" placeholder="Company Name">
+                            <label for="floatingcompany light-300">Curso de interés:</label>
+                        </div>
+                    </div><!-- End Input Company Name -->
+                    <!-- End Input Subject -->
+
+                    <div class="col-12">
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control light-300" rows="8" placeholder="Message" id="floatingtextarea"></textarea>
+                            <label for="floatingtextarea light-300">Mensaje</label>
+                        </div>
+                    </div><!-- End Textarea Message -->
+
+                    <div class="col-md-12 col-12 m-auto text-end">
+                        <button type="submit" class="btn btnsend rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Enviar Mensaje</button>
+                    </div>
+
+                </form>
+            </div>
+            <!-- End Contact Form -->
+
+
+        </div>
+    </section>
+    <!-- End Contact -->
+
+        <!-- Start Footer -->
+        <footer class="footer pt-4 ">
+            <div class="container ">
+                <div class="row py-4">
+    
+                    <div class="col-lg-3 col-12 align-left ">
+                        <a class="navbar-brand" href="index.html">
+                            
+                            <i class='bx bx-brain bx-sm text-light'></i>
+                             <span class="text-light h4">Guinness</span><span class="text-italic-footer">DotCom</span></a>
+                        </a>
+                        <p class="text-light my-lg-4 my-2">
+                            Seguinos en nuestras redes:
+                        </p>
+                        <ul class="list-inline footer-icons light-200">
+                            <li class="list-inline-item m-20">
+                                <a class="text-light" target="_blank" href="http://facebook.com/">
+                                    <i class='bx bxl-facebook-circle bx-md'></i>
+                                    
+                                </a>
+                            </li>
+                            <li class="list-inline-item m-20">
+                                <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                    <i class='bx bxl-linkedin bx-md'></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item m-10">
+                                <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                    <i class='bx bxl-whatsapp bx-md'></i>
+                                </a>
+                            </li>
+    
+                        </ul>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                        <h3 class="h4 pb-lg-3 text-light light-300">Nuestro Espacio</h2>
+                            <ul class="list-unstyled text-light light-300">
+                                <li class="pb-2">
+                                    <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light" 
+                                    href="index.html">Home</a>
+                                </li>
+                                <li class="pb-2">
+                                    <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+                                    href="about.html">Sobre Nosotros</a>
+                                </li>
+                                <li class="pb-2">
+                                    <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+                                    href="work.html">Nuestros Cursos</a>
+                                </li>
+                                <li class="pb-2">
+                                    <i class='bx bxs-chevrons-right'></i></i></i><a class="text-decoration-none text-light py-1" 
+                                    href="pricing.html">Aranceles</a>
+                                </li>
+                                <li class="pb-2">
+                                    <i class='bx bxs-chevrons-right'></i></i><a class="text-decoration-none text-light py-1" 
+                                    href="contact.html">Contáctanos</a>
+                                </li>
+                            </ul>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                        <h2 class="h4 pb-lg-3 text-light light-300">Nuestros cursos</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+                                href="#">Diseño Gráfico</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+                                href="#">Diseño UX/UI</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+                                href="#">Programación</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+                                href="#">Data Science</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                  
+                </div>
+            </div>
+    
+            <div class="w-100 lastline py-3">
+                <div class="container">
+                    <div class="row pt-2">
+                        <div class="col-lg-6 col-sm-12">
+                            <p class="text-lg-start text-center text-light light-300">
+                                © Copyright 2021 Guinness.DotCom. Todos los derechos reservados.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <p class="text-lg-end text-center text-light light-300">
+                                Diseñado por <strong>Iara Orosco - Comisión #2104</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </footer>
+        <!-- End Footer -->
+
+
+<!-- Bootstrap -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

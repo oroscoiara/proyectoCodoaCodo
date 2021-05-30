@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Guinness - Cursos de Diseño y Programación</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+		<!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-black">
+	
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+        navbar-light = texto negro de la letra
+        bg-white = fondo de color blanco
+        -->
+    
+            <div class="container d-flex justify-content-between align-items-center">
+            
+                <a class="navbar-brand h1" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+                    <i class='bx bx-brain bx-sm text-dark'></i>
+                                  <!--	bx bx-buildings = icono del logo de la web: 
+                    http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+                    https://boxicons.com/
+                    -->
+    
+               <span class="text-dark h4">Guinness</span><span class="text-italic">DotCom</span></a>
+                
+                <!--	boton de hamburguesa --> 
+                    <button class="navbar-toggler border-0" 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbar-toggler-success" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+            id="navbar-toggler-success">
+            
+            <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+            por un punto de interrupción principal.
+            flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+            d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+            directos en elementos flexibles
+            -->
+                            <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                            <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-light">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+                           (incluida la compatibilidad con menús desplegables).-->
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                            <!-- px = padding y mx es el margin 
+                            rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Nuestros Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Aranceles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    <!---------------------------------------------------------Fin de las opciones del menu
+    ------------------------------------------------------------ Inicio de los iconos del menu-->
+                    <div class="navbar align-self-center d-flex">
+                        <a class="nav-link" href="#"><i class='bx bxs-shopping-bags bx-sm text-dark'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bxs-user-circle bx-sm text-dark'></i></a>
+                        <!--	https://iconify.design/icon-sets/bx/-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <!----------------------------------------------------------- Fin de los iconos del menu-->
+    
+        <!-- Close Header -->
+
+
+    <!-- Start pricing -->
+    <div class="container-lg py-5">
+        <div class="col-md-12 m-auto text-center py-5">
+            <h1 class="pricing-header h2 semi-bold-600">Aranceles de nuestros cursos</h1>
+
+        </div>
+
+
+        <div class="row px-lg-3">
+
+
+            <div class="col-md-4 pb-5 pt-sm-0 mt-5 px-xl-3">
+                <div class="pricing-table card h-100 shadow-sm border-0 py-5">
+                    <div class="pricing-table-body card-body rounded-pill text-center align-self-center p-md-0">
+                        <i class="pricing-table-icon display-3 bx bx-package planes"></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Plan Beca 100%</h2>
+                        <p>$0</p>
+                        <ul class="pricing-table-body text-start text-dark px-4 list-unstyled light-300">
+                            <li><i class="bx bxs-circle me-2"></i>Accedé a una beca del 100%</li>
+                            <li><i class="bx bxs-circle me-2"></i>Deberás cumplir con el 80% de la asistencia y el 100% de los trabajos entregados</li>
+
+                        </ul>
+                        <div class="pricing-table-footer pt-5">
+                            <a href="#" class="btn rounded-pill px-4 btn-outline-primary light-300">Conocé más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 pt-sm-0 pt-3 px-xl-3">
+                <div class="pricing-table card bg-planbasico h-100 card-rounded shadow-sm border-0 py-5">
+                    <div class="pricing-table-body card-body text-center text-white align-self-center p-md-0">
+                        <i class="pricing-table-icon display-3 bx bx-package text-white planes py-3"></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Plan Básico</h2>
+                        <p>$4.500</p>
+                        <ul class="pricing-table-list text-start text-dark px-4 list-unstyled light-300">
+                            <li class="text-white"><i class="bx bxs-circle me-2"></i>1 curso a elección por $4.500</li>
+                            <li class="text-white"><i class="bx bxs-circle me-2"></i>2 cursos a elección por $3.500 cada uno</li>
+                            <li class="text-white"><i class="bx bxs-circle me-2"></i>Hasta 6 cuotas sin interés</li>
+
+                        </ul>
+                        <div class="pricing-table-footer pt-5 pb-2">
+                            <a href="#" class="btn rounded-pill px-4 btn-outline-light light-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 pb-5 pt-sm-0 mt-5 px-xl-3">
+                <div class="pricing-table card h-100 shadow-sm border-0 py-5">
+                    <div class="pricing-table-body card-body text-center align-self-center p-md-0">
+                        <i class="pricing-table-icon display-3 bx bx-package planes"></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Plan Hay Equipo!</h2>
+                        <p>Precio variable</p>
+                        <ul class="pricing-table-list text-start text-dark px-4 list-unstyled light-300">
+                            <li><i class="bx bxs-circle me-2"></i>2 familiares: 10% dto para el curso de cada uno</li>
+                            <li><i class="bx bxs-circle me-2"></i>3 familiares: 20% dto para el curso de cada uno</li>
+                            <li><i class="bx bxs-circle me-2"></i>Consultá por más opciones</li>
+                        </ul>
+                        <div class="pricing-table-footer pt-1">
+                            <a href="#" class="btn rounded-pill px-4 btn-outline-primary light-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- End Content -->
+
+
+
+
+
+  <!-- Start Pricing Horizontal Section -->
+    <!--<section class="bg-light pt-sm-0 py-5">
+        <div class="container py-5">
+
+            <h1 class="h2 semi-bold-600 text-center mt-2">Precios Anuales</h1>
+            <p class="text-center pb-5 light-300">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut facilisis.</p>
+
+             Start Pricing Horizontal -->
+            <!--<div class="pricing-horizontal row col-10 m-auto d-flex shadow-sm rounded overflow-hidden bg-white">
+                <div class="pricing-horizontal-icon col-md-3 text-center bg-secondary text-light py-4">
+                    <i class="display-1 bx bx-package pt-4"></i>
+                    <h5 class="h5 semi-bold-600 pb-4 light-300">Gratis</h5>
+                </div>
+                <div class="pricing-horizontal-body offset-lg-1 col-md-5 col-lg-4 d-flex align-items-center pl-5 pt-lg-0 pt-4">
+                    <ul class="text-left px-4 list-unstyled mb-0 light-300">
+                        <li><i class="bx bxs-circle me-2"></i>5 Usuarios</li>
+                        <li><i class="bx bxs-circle me-2"></i>2 TB espacio</li>
+                        <li><i class="bx bxs-circle me-2"></i>Blog</li>
+                    </ul>
+                </div>
+                <div class="pricing-horizontal-tag col-md-4 text-center pt-3 d-flex align-items-center">
+                    <div class="w-100 light-300">
+                        <p>$0</p>
+                        <a href="#" class="btn rounded-pill px-4 btn-outline-primary mb-3">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+      End Pricing Horizontal -->
+
+      
+
+
+    <!-- Start Footer -->
+    <footer class="footer pt-4 ">
+        <div class="container ">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left ">
+                    <a class="navbar-brand" href="index.html">
+                        
+                        <i class='bx bx-brain bx-sm text-light'></i>
+              	       <span class="text-light h4">Guinness</span><span class="text-italic-footer">DotCom</span></a>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Seguinos en nuestras redes:
+                    </p>
+                    <ul class="list-inline footer-icons light-200">
+                        <li class="list-inline-item m-20">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-circle bx-md'></i>
+                                
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-20">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-10">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp bx-md'></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Nuestro Espacio</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light" 
+								href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+								href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+								href="work.html">Nuestros Cursos</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i></i></i><a class="text-decoration-none text-light py-1" 
+								href="pricing.html">Aranceles</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx bxs-chevrons-right'></i></i><a class="text-decoration-none text-light py-1" 
+								href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Nuestros cursos</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Diseño Gráfico</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Diseño UX/UI</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Programación</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx bxs-chevrons-right'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Data Science</a>
+                        </li>
+                    </ul>
+                </div>
+
+              
+            </div>
+        </div>
+
+        <div class="w-100 lastline py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 Guinness.DotCom. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <strong>Iara Orosco - Comisión #2104</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
